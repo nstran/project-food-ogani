@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+}
+
+.header__top {
+    background: #f5f5f5;
+    &__left {
+        padding: 10px 0 13px;
+        ul {
+            margin: 0;
+            li {
+                font-size: 14px;
+                color: #1c1c1c;
+                display: inline-block;
+                margin-right: 25px;
+                margin-left: 20px;
+                position: relative;
+                i {
+                    color: #252525;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                }
+                &:first-child:after {
+                    position: absolute;
+                    right: -25px;
+                    top: 1px;
+                    height: 20px;
+                    width: 1px;
+                    background: #000;
+                    opacity: .1;
+                    content: "";
+                }
+                span {
+                    position: absolute;
+                    top: -2px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+    &__right {
+        text-align: right;
+        padding: 10px 0 13px;
+        &__social {
+            position: relative;
+            display: inline-block;
+            margin-right: 35px;
+            &::after {
+                position: absolute;
+                right: -15px;
+                top: 1px;
+                height: 20px;
+                width: 1px;
+                background: #000;
+                opacity: .1;
+                content: "";
+            }
+            a {
+                color: #000;
+                padding: 0 7px;
+                font-size: 14px;
+                &:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+        &__language {
+            position: relative;
+            display: inline-block;
+            margin-right: 50px;
+            &::after {
+                position: absolute;
+                right: -25px;
+                top: 1px;
+                height: 20px;
+                width: 1px;
+                background: #000;
+                opacity: .1;
+                content: "";
+            }
+            img {
+                padding-right: 10px;
+            }
+            p {
+                display: inline-block;
+                font-size: 14px;
+                margin: 0;
+            }
+            span {
+                font-size: 10px;
+            }
+        }
+        &__login {
+            margin-right: 45px;
+            position: relative;
+            display: inline-block;
+            a {
+                color: #1c1c1c;
+                font-size: 14px;
+                text-decoration: none;
+                i {
+                    color: #000;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+            span {
+                position: absolute;
+                font-size: 12px;
+                top: 2px;
+                left: -15px;
+            }
+        }
+    }
+}
+
+.header__logo {
+    padding: 15px 0;
+    a {
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.header__menu {
+    padding: 24px 0;
+    ul {
+        .dropdown {
+            .nav-link {
+                &:hover {
+                    background: none !important;
+                    color: #252525;
+                }
+            }
+            button {
+                outline: none;
+                &:hover {
+                    color: #7fad39 !important;
+                }
+            }
+            &:hover button {
+                background: none;
+            }
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 30px;
+            position: relative;
+            .dropdown-menu {
+                margin: 0;
+                border-radius: 0;
+                padding: 0;
+                background: #222;
+                width: 180px;
+                .dropdown-item {
+                    color: white;
+                }
+            }
+            a {
+                font-size: 14px !important;
+                color: #252525;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+                transition: all, .3s;
+                padding: 5px 0;
+                display: block;
+                &:hover {
+                    color: #7fad39 !important;
+                }
+            }
+            .dropdown {
+                button {
+                    background: none;
+                    color: #252525;
+                    border: none;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.header__cart {
+    text-align: right;
+    padding: 24px 0;
+    ul {
+        display: inline-block;
+        margin-right: 25px;
+        padding: .5rem 1rem;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 15px;
+            a {
+                font-size: 18px;
+                color: #1c1c1c;
+                position: relative;
+                span {
+                    position: absolute;
+                    height: 13px;
+                    width: 13px;
+                    background: #7fad39;
+                    font-size: 10px;
+                    color: #fff;
+                    line-height: 13px;
+                    text-align: center;
+                    font-weight: 700;
+                    display: inline-block;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

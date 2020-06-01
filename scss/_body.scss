@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+}
+
+.hero {
+    padding-bottom: 50px;
+    &__categories {
+        &__all {
+            border: 1px solid #f0f0f0!important;
+            cursor: pointer;
+            .navbar {
+                button {
+                    color: #fff;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                padding: .3rem 1rem !important;
+                background: #7fad39;
+                .navbar-brand {
+                    color: #fff;
+                    margin-left: -20px;
+                }
+            }
+            .navbar-collapse {
+                ul {
+                    li {
+                        a {
+                            font-size: 16px;
+                            color: #1c1c1c;
+                            line-height: 39px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__search {
+        margin-bottom: 30px;
+        overflow: hidden;
+        &__form {
+            width: 610px;
+            height: 50px;
+            border: 1px solid #ebebeb;
+            position: relative;
+            float: left;
+            button {
+                position: absolute;
+                right: 0;
+                top: -1px;
+                height: 50px;
+                font-size: 14px;
+                color: #fff;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 13px 30px 12px;
+                background: #7fad39;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        &__categories {
+            width: 30%;
+            float: left;
+            font-size: 16px;
+            color: #1c1c1c;
+            font-weight: 700;
+            padding-left: 18px;
+            padding-top: 11px;
+            position: relative;
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 14px;
+                height: 20px;
+                width: 1px;
+                background: #000;
+                opacity: .1;
+                content: "";
+            }
+            span {
+                float: right;
+                padding-right: 10px;
+            }
+        }
+        input {
+            outline: none;
+            width: 70%;
+            border: none;
+            height: 48px;
+            font-size: 16px;
+            color: #b2b2b2;
+            padding-left: 20px;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: -1px;
+            height: 50px;
+        }
+        .site-btn {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 13px 30px 12px;
+            background: #7fad39;
+            border: none;
+        }
+    }
+    &__search__phone {
+        float: right;
+        &__icon {
+            font-size: 18px;
+            color: #7fad39;
+            height: 50px;
+            width: 50px;
+            background: #f5f5f5;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+        }
+        &__text {
+            overflow: hidden;
+            h5 {
+                color: #1c1c1c;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            span {
+                font-size: 14px;
+                color: #6f6f6f;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        height: 431px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        .hero__text {
+            position: absolute;
+            left: 60px;
+            span {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 4px;
+                color: #7fad39;
+            }
+            h2 {
+                font-size: 46px;
+                color: #252525;
+                line-height: 52px;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+            p {
+                margin-bottom: 35px;
+            }
+            a {
+                display: inline-block;
+                font-size: 14px;
+                padding: 10px 28px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                background: #7fad39;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

@@ -1,4 +1,6 @@
-$('.owl-carousel').owlCarousel({
+// Carousel categories
+
+$('.owl-categories').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
@@ -19,6 +21,32 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+
+// Carousel latest-product
+$('.owl-latest-product').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
+
+
+
+// Filter element
 filterSelection("all")
 
 function filterSelection(c) {

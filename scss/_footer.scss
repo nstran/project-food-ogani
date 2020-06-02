@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #f3f6fa;
+    padding-top: 70px;
+    padding-bottom: 0;
+    &-about {
+        margin-bottom: 30px;
+        &-logo {
+            padding-bottom: 15px;
+            a {
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style-type: none;
+                color: #1c1c1c;
+                line-height: 36px;
+            }
+        }
+    }
+    &__widget {
+        h6 {
+            color: #1c1c1c;
+            font-weight: 700;
+            margin-bottom: 10px
+        }
+        ul {
+            float: left;
+            width: 50%;
+            li {
+                list-style-type: none;
+                font-size: 14px;
+                color: #1c1c1c;
+                font-size: 14px;
+                line-height: 32px;
+                a {
+                    color: #1c1c1c;
+                    text-decoration: none;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            color: #1c1c1c;
+            margin-bottom: 30px;
+        }
+        /* Form */
+        form {
+            position: relative;
+            margin-bottom: 30px;
+            input {
+                width: 100%;
+                font-size: 16px;
+                padding-left: 20px;
+                color: #1c1c1c;
+                height: 46px;
+                border: 1px solid #ededed;
+                outline: none;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 0 26px;
+                height: 100%;
+            }
+            .site-btn {
+                font-size: 14px;
+                color: #fff;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 13px 30px 12px;
+                background: #7fad39;
+                border: none;
+            }
+        }
+        /* Social */
+        &__social {
+            a {
+                display: inline-block;
+                height: 41px;
+                width: 41px;
+                font-size: 16px;
+                color: #404040;
+                border: 1px solid #ededed;
+                border-radius: 50%;
+                line-height: 38px;
+                text-align: center;
+                background: #fff;
+                &:hover {
+                    transition: 0.4s;
+                    background: #7fad39;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    /* Copy right */
+    &__copyright {
+        border-top: 1px solid #ebebeb;
+        padding: 15px 0;
+        overflow: hidden;
+        margin-top: 20px;
+        &__text {
+            float: left;
+        }
+        &__payment {
+            float: right;
+        }
+    }
+}

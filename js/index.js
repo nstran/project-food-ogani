@@ -1,3 +1,13 @@
+// Buger-Menu
+
+$('.humberger__open, .humberger__menu__overlay').click(function() {
+    $('.humberger__menu__wrapper').toggleClass('show__humberger__menu__wrapper');
+    $('.humberger__menu__overlay').toggleClass('active');
+    $('.humberger__open').toggleClass('clicked');
+    $('body').toggleClass('overflow');
+});
+
+
 // Carousel categories
 
 $('.owl-categories').owlCarousel({
@@ -31,17 +41,7 @@ $('.owl-latest-product').owlCarousel({
     autoplay: true,
     autoplayTimeout: 3000,
     smartSpeed: 1000,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
+    items: 1,
 })
 
 

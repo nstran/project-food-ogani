@@ -157,6 +157,9 @@
         align-items: center;
         img {
             width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
         }
         .hero__text {
             position: absolute;
@@ -242,38 +245,24 @@
                 &:focus {
                     outline: none;
                 }
-            }
-            .owl-prev {
                 font-size: 18px;
                 color: #1c1c1c;
                 height: 70px;
                 width: 30px;
                 line-height: 70px;
                 text-align: center;
-                border: 1px solid #ebebeb;
+                border: 1px solid #ebebeb !important;
                 position: absolute;
                 left: -35px;
                 top: 40%;
-                background: #ffffff;
+                background: #ffffff !important;
                 span {
                     font-size: 30px;
                 }
             }
             .owl-next {
-                font-size: 18px;
-                color: #1c1c1c;
-                height: 70px;
-                width: 30px;
-                line-height: 70px;
-                text-align: center;
-                border: 1px solid #ebebeb;
-                position: absolute;
+                left: auto;
                 right: -35px;
-                top: 40%;
-                background: #ffffff;
-                span {
-                    font-size: 30px;
-                }
             }
         }
     }
@@ -492,6 +481,7 @@
             }
         }
         &_text {
+            height: 150px;
             ul {
                 margin: 15px 0;
                 li {
@@ -521,6 +511,53 @@
                 font-weight: 400;
                 line-height: 26px;
                 margin: 0 0 15px 0;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero {
+        &__categories {
+            margin-bottom: 30px;
+        }
+        &__search {
+            margin-bottom: 30px;
+            &__form {
+                width: 100%;
+            }
+            &__categories {
+                display: none;
+            }
+            &__phone {
+                float: left;
+                margin-top: 30px;
+            }
+        }
+        &__item {
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .categories {
+        .categories__slider {
+            .owl-nav {
+                text-align: center;
+                margin-top: 40px;
+                button {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                }
+                .owl-next {
+                    right: -10px
+                }
             }
         }
     }
